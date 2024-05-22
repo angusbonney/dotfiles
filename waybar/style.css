@@ -1,0 +1,95 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, JetBrainsMono Nerd Font Mono;
+    margin: -0.25em;
+}
+
+/* waybar */
+window#waybar {
+  background-color: #181825;
+  color: #cdd6f4;
+  border: 2px;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+/* workspaces */
+#workspaces {
+  padding: 0 0.5em;
+  background-color: transparent;
+  color: #cdd6f4;
+  margin: 0.25em;
+  font-size: 60px;
+  background: #1e1e2e;
+  
+  border: 2px;
+  border-radius: 10px;
+  border-style: solid;
+}
+#workspaces button {
+  padding: 0 0.5em;
+  background-color: transparent;
+  color: #cdd6f4;
+  margin: 0.25em;
+  font-size: 40px;
+  background: transparent;
+  border: none;
+}
+#workspaces button:hover {
+  box-shadow: none;
+  text-shadow: none;
+  color: #f9e2af;
+  transition: 0s;
+}
+#workspaces button.active {
+  color: #a6e3a1;
+  font-weight: bolder;
+}
+
+/* other */
+#cpu {
+  color: #a6e3a1;
+  font-size: 20px;
+}
+#custom-cpuicon {
+  font-size: 40px;
+  color: #a6e3a1;
+}
+
+#memory {
+  color: #94e3d5;
+  font-size: 20px;
+}
+#custom-memoryicon {
+  font-size: 40px;
+  color: #94e3d5;
+}
+
+#disk {
+  color: #fab387;
+  font-size: 20px;
+}
+#custom-diskicon {
+  font-size: 40px;
+  color: #fab387
+}
+
+#clock {
+  color: #cdd6f4;
+  font-size: 20px;
+}
+#custom-clockicon {
+  color: #cdd6f4;
+  font-size: 40px;
+}
+
+#custom-spacer {
+  font-size: 40px;
+  color: #11111b;
+}
+
+#custom-distro {
+  margin-left: 0.5em;
+  font-size: 60px;
+  color: #89b4fa;
+}

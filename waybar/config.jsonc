@@ -1,0 +1,94 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 70,
+    "margin-top": 7,
+    "margin-bottom": 3,
+    "margin-left": 5,
+    "margin-right": 5,
+    "spacing": 20,
+
+    "modules-left": ["custom/distro", "hyprland/workspaces"],
+
+    "modules-center": ["clock", "custom/clockicon"],
+
+    "modules-right": [
+      "cpu", "custom/cpuicon",
+      "custom/spacer",
+      "memory","custom/memoryicon",
+      "custom/spacer",
+      "disk", "custom/diskicon"],
+    
+    "clock": {
+      "format": "{:%R %A, %B %d, %Y} "
+    },
+
+    "custom/clockicon": {
+      "format":  " ",
+      "tooltip": false
+    },
+
+    "cpu": {
+      "interval": 1,
+      "format": " {icon0} {icon1} {icon2} {icon3} {icon4} {icon5} {icon6} {icon7} {usage}% ",
+      "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+      "tooltip": false
+    },
+
+    "disk": {
+      "interval": 30,
+      "format": "{percentage_used}% ",
+      "tooltip-format": "Disk\n{used}/{total} used, {free} free"
+    },
+
+    "memory": {
+      "interval": 1,
+      "format": "{percentage}% ",
+      "tooltip-format": "RAM\n{used}GiB/{total}GiB used, {avail}GiB free"
+    },
+
+    "hyprland/workspaces": {
+      "active-only": false,
+      "all-outputs": true,
+      "persistent-workspaces": {
+        "*": 5
+      },
+      "format":" {icon} ",
+      "format-icons": {
+      "1": "",
+      "2": "󰓓",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": "",
+      "10": ""}
+    },
+
+    "custom/cpuicon": {
+      "format": " ",
+      "tooltip": false
+    },
+    
+    "custom/memoryicon": {
+      "format": " ",
+      "tooltip": false
+    },
+
+    "custom/diskicon": {
+      "format": "   ",
+      "tooltip": false
+    },
+
+    "custom/spacer": {
+      "format": "  ",
+      "tooltip": false
+    },
+
+    "custom/distro": {
+      "format": "󰣇",
+      "tooltip": false
+    }
+}
